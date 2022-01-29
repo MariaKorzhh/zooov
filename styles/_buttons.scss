@@ -1,0 +1,18 @@
+.btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 13px 42px;
+    background-color: #961914;
+    border-radius: 8px;
+    text-align: center;
+    transition: all .3;
+
+    &:hover {
+        background-color: #75110D;
+    }
+}
+
+.hero__btn {
+    min-width: 226px;
+}
