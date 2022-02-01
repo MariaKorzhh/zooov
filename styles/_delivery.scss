@@ -1,5 +1,6 @@
 .delivery {
     padding: 90px 0 100px;
+    overflow: hidden;
 
     &__col {
         @include b(tablet) {

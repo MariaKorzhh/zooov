@@ -597,6 +597,7 @@ a {
 
 .delivery {
   padding: 90px 0 100px;
+  overflow: hidden;
 }
 @media (max-width: 1024px) {
   .delivery__col {
