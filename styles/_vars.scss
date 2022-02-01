@@ -1,0 +1,34 @@
+
+$tablet-b: 1024px;
+$mobile-b: 767px;
+$mobile-sm-b: 479px;
+
+@mixin x-center  {
+    display: flex;
+    align-items: center;
+}
+
+@mixin y-center  {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin b($breakpoints) {
+    @if ($breakpoints == tablet) {
+        @media (max-width: #{$tablet-b}) {
+            @content 
+        }
+    } @else if ($breakpoints == mobile) {
+        @media (max-width: #{$mobile-b}) {
+            @content 
+        }
+    } @else if ($breakpoints == mobile-sm) {
+        @media (max-width: #{$mobile-sm-b}) {
+            @content 
+        }
+    } @else {
+        @media (max-width: ($breakpoints + px)) {
+            @content 
+        }
+    }
+}
