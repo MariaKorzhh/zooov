@@ -1,0 +1,56 @@
+.delivery {
+    padding: 90px 0 100px;
+
+    &__col {
+        @include b(tablet) {
+            padding: 0 14px 0 40px;
+
+            &-text {
+                max-width: 295px;
+                max-height: 66px;
+            }
+        }        
+    }
+
+    &__link {
+        position: relative;
+        color: #961914;
+        font-weight: 500;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background-color: #961914;
+            transition: all .3s;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        left: 35%;
+        top: 10%;
+        width: 140px;
+
+        @include b(tablet) {
+            display: none;
+        }
+
+        &-arrow {
+            display: none;
+
+            @include b(tablet) {
+                display: block;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+}

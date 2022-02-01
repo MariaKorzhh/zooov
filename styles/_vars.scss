@@ -27,7 +27,7 @@ $mobile-sm-b: 479px;
             @content 
         }
     } @else {
-        @media (max-width: ($breakpoints + px)) {
+        @media (max-width: $breakpoints) {
             @content 
         }
     }

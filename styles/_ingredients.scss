@@ -1,7 +1,8 @@
 .ingredients {
     padding: 40px 0 100px;
+    overflow: hidden;
     @include b(mobile) {
-        padding: 0 0 50px;
+        padding: 0 0 40px;
     }
 
     &__wrap {

@@ -1,5 +1,6 @@
 .about {
     padding: 90px 0 40px;
+    overflow: hidden;
     @include b(mobile) {
         padding: 40px 0 0;
     }

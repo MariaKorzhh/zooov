@@ -1,0 +1,87 @@
+.advantages {
+    padding: 80px 0 90px;
+    overflow: hidden;
+    position: relative;
+    @include b(mobile) {
+        padding: 40px 0 40px;
+    }
+
+    &__decor {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        top: 58%;
+        transform: translateY(-50%);
+
+        &-mobile {
+            display: none;
+        }
+
+        @include b(tablet) {
+            transform: translateY(-50%);
+            width: 1440px;
+            left: -46%;
+            top: 70%;
+
+            &-mobile {
+                display: block;
+                position: absolute;
+                z-index: -1;
+                width: 1440px;
+                left: 0;
+                top: 25%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__wrap {
+        @include x-center;
+        @include y-center;
+        margin: 0 -14px;
+        @include b(tablet) {
+            display: block;
+        }
+    }
+
+    &__col {
+        width: 25%;
+        padding: 0 14px;
+        position: relative;
+
+        &-title {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 8px;
+        }
+
+        @include b(tablet){
+            width: 100%;
+            margin-bottom: 45px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &-text {
+                max-width: 282px;
+                max-height: 88px;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 63px;
+        @include b(tablet) {
+            margin-bottom: 46px;
+        }
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 16px;
+    }
+}
