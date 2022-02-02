@@ -508,7 +508,7 @@ a {
 }
 
 .advantages {
-  padding: 80px 0 90px;
+  padding: 90px 0;
   overflow: hidden;
   position: relative;
 }
@@ -545,9 +545,28 @@ a {
     transform: translateY(-50%);
   }
 }
+.advantages__decor__delivery {
+  position: absolute;
+  left: 35%;
+  top: 10%;
+  width: 140px;
+}
+@media (max-width: 1024px) {
+  .advantages__decor__delivery {
+    display: none;
+  }
+}
+.advantages__decor__delivery-arrow {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .advantages__decor__delivery-arrow {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+}
 .advantages__wrap {
-  display: flex;
-  align-items: center;
   display: flex;
   justify-content: center;
   margin: 0 -14px;
@@ -555,6 +574,8 @@ a {
 @media (max-width: 1024px) {
   .advantages__wrap {
     display: block;
+    overflow: hidden;
+    position: relative;
   }
 }
 .advantages__col {
@@ -576,9 +597,10 @@ a {
   .advantages__col:last-child {
     margin-bottom: 0;
   }
-  .advantages__col-text {
-    max-width: 282px;
-    max-height: 88px;
+}
+@media (max-width: 1024px) {
+  .advantages__col__delivery {
+    padding: 0 14px 0 40px;
   }
 }
 .advantages__title {
@@ -594,26 +616,12 @@ a {
   height: 40px;
   margin-bottom: 16px;
 }
-
-.delivery {
-  padding: 90px 0 100px;
-  overflow: hidden;
-}
-@media (max-width: 1024px) {
-  .delivery__col {
-    padding: 0 14px 0 40px;
-  }
-  .delivery__col-text {
-    max-width: 295px;
-    max-height: 66px;
-  }
-}
-.delivery__link {
+.advantages__link {
   position: relative;
   color: #961914;
   font-weight: 500;
 }
-.delivery__link::after {
+.advantages__link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -623,29 +631,8 @@ a {
   background-color: #961914;
   transition: all 0.3s;
 }
-.delivery__link:hover::after {
+.advantages__link:hover::after {
   width: 100%;
-}
-.delivery__decor {
-  position: absolute;
-  left: 35%;
-  top: 10%;
-  width: 140px;
-}
-@media (max-width: 1024px) {
-  .delivery__decor {
-    display: none;
-  }
-}
-.delivery__decor-arrow {
-  display: none;
-}
-@media (max-width: 1024px) {
-  .delivery__decor-arrow {
-    display: block;
-    position: absolute;
-    bottom: 0;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
